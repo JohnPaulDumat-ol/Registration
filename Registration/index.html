@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    h2 {text-align: center;}
+</style>
+<body style="background-color: rgb(22, 231, 221);">
+
+     <h2 style="background-color:DodgerBlue;">This Is My Form</h2>
+
+    <form action="action.php" method= "Post">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"> <input type="date" id="date" name="date"></br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="number"> Tel Number:</label><br>
+    <input type="number" id="number" name="number">
+    </br>
+
+    <label for="search">Search: </label><br>
+    <input type="search" id="search" name="search"> <br>
+
+    <label for="homepage">Add your homepage:</label><br>
+    <input type="url" id="homepage" name="homepage">
+    </br>
+
+    <label for="favcolor">Select your favorite color:</label><br>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    </br>
+
+    <label for="vol">Volume (between 0 and 50):</label><br>
+      <input type="range" id="vol" name="vol" min="0" max="50">
+    </br>
+
+    <label for="birthdaytime">Birthday (date and time):</label></br>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime"></br>
+    </br>
+
+    <label for="file">Select a file:</label>
+    <input type="file" id="file" name="file">
+    </br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    </br>
+    
+    Please Choose Your Subjects: <br>
+            <input type="checkbox" id="ITS-309" name="subjects[]" value="ITS-309">
+            <label for="ITS-309">IA&S</label><br>
+            <input type="checkbox" id="ITS-307" name="subjects[]" value="ITS-307">
+            <label for="ITS-307">Platform Technologies</label><br>
+            <input type="checkbox" id="ITS-306" name="subjects[]" value="ITS-306">
+            <label for="ITS-306">Web Development 2</label><br>
+        Select Your Web Language<br>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>  
+    </br>
+
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email"></br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"></br>
+    <br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    </br>
+
+</form>
+</body>
+</html>
